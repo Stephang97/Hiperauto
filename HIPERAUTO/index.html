@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HIPERAUTO</title>
+    <link rel="stylesheet" href="estilo.css">    
+</head>
+
+<body>
+    <header>
+        <h2 class="conteiner">HIPER<span>AUTO</span></h2>
+        <nav>
+            <ul>
+                <li><img src="img/logo.png" width="268px" height="66px"></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main >
+        <section>
+            <fieldset>
+                <legend>PEDIDOS A SUCURSAL</legend>
+                <form class="" action="index.html" method="post" name="forma">
+                    <label id="obligatorio">DATOS DEL EMISOR</label><br><br>
+                    <input type="text" placeholder="Nombre" id="nombre"><br><br>
+                    <p class="error">El sucursal es obligatio</p><br></p>
+                
+                    <input type="text" type="direccion" placeholder="Direccion" id="direccionOb"  />
+                    <p class="error">El direccion es obligatio</p><br><br>
+                    <input type="text" type="ciudad" placeholder="Ciudad" id="ciudadOb"  />
+                    <p class="error">El ciudad es obligatio</p><br><br>
+                    <input type="text" type="tipo" placeholder="Tipo" id="tipoOb"  />
+                    <p class="error">El tipo es obligatio</p><br><br>
+                    <label> PIEZA</label><br>
+                    <select  id="piezaOb">
+                        <option value="seleccionar">Seleccionar PIEZA</option>
+                        <option value="Suspension">Suspension</option>
+                        <option value="llantas">Llantas</option>
+                        <option value="Pastillas de freno">Pastillas de freno</option>
+                        <option value="Volantes">Volantes</option>
+                        <option value="Valvulas">Valvulas</option>
+                    </select>
+                    <br><br>
+                    <input type="number" placeholder="Cantidad" id="cantidadOb" min="4">
+                    <br><br>
+                    <select  id="pedidoOb" onchange="cambiarFondo(this)">
+                        <option value="Normal">Normal</option>
+                        <option value="Urgente">Urgente</option>
+                    </select>
+                    <br><br>
+                    <input type="button" name="enviar" value="Enviar Pedido" class="enviar" id="enviar" > 
+                    <br><br>
+                   
+            </fieldset>
+        </section>
+    </main>
+
+    <main id="dos">
+        <section class="dos">  
+            <fieldset>
+                <legend>INVENTARIO</legend>
+                <table class="table" id="table" border="1"> 
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Ciudad</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Pieza</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Pedido</th>
+                      </tr>
+                    </thead>
+                    <tbody id="myTable">
+                    <tr>
+                      <th scope="row" id="codigo"></th>
+                      <td scope="row" id="nombre"></td>
+                      <td scope="row" id="direccion"></td>
+                      <td scope="row" id="ciudad"></td>
+                      <td scope="row" id="tipo"></td>
+                      <td scope="row" id="pieza"></td>
+                      <td scope="row" id="cantidad"></td>
+                      <td scope="row" id="pedidoOb" id="pinta" ></td>
+                      
+                    </tr>
+                    </tbody>
+                    </table>
+            </fieldset>
+        </section>
+    </main>
+
+    
+</body>
+<script src="main.js"></script>
+</html>

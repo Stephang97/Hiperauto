@@ -1,0 +1,146 @@
+* {
+    margin:0;
+    box-sizing:border box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+header {
+    width: 80%;
+    background-color: rgb(202, 33, 3);
+    padding: 5px 9%;
+    float: left;
+}
+
+header h2 {
+    color: rgb(131, 88, 7);
+    float: left;
+    margin: 30px;
+    font-size:3rem;
+}
+
+header h2 span{color: #dac464d2;}
+
+header nav{float:right;
+    font-size: x-large;
+}
+header nav ul {list-style: none;
+    margin-top: 26px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+header nav ul li a {
+    color: rgb(0, 60, 255);
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+header nav ul li a:hover{
+color:#ffffff;
+background-color: rgba(0, 255, 221, 0.411);
+padding: 10px;
+
+}
+
+main {
+    width: 50%;
+    float: right;
+    
+}
+main.dos {
+    width: 50%;
+    float: left;
+}
+
+section{
+    width: 95%;
+    padding: 30px 2%;
+}
+section fieldset{
+    border:2px solid #c3c3c3 ;
+    padding: 10px 5%;
+}
+
+section.dos fieldset{
+    border:2px solid #c3c3c3 ;        
+}
+
+section fieldset legend{
+    font-weight: bold;
+    font-size:2rem ;
+  
+}
+
+section form{
+    width: 100%;
+}
+
+section form label{
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+    
+    float: left;
+}
+
+section form p{
+    background-color: rgb(238, 107, 20);
+    color: #fff;
+    padding: 10px;
+    display: none;
+}
+section form input {
+    width:100% ;
+    padding: 10px;
+    border-radius: 4px ;
+}
+section form select{
+    width: 100%;
+    padding: 10px;
+    background-color: #c3c3c3;
+    color: #000; 
+     border-radius: 4px;
+}
+.enviar{
+    width: 100%;
+    background-color: rgb(182, 14, 14);
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-transform:  uppercase;
+}
+.enviar:hover{
+    background-color: #f3b43e69;
+}
+
+
+table {     
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    
+    margin: 45px;     
+    width: 480px; text-align: left;    
+    border-collapse: collapse; }
+
+th {     
+    font-size: 13px;     
+    font-weight: normal;    
+     padding: 8px;     
+     background: #46a5ad;
+    border-top: 4px solid #79e9d1cc;    border-bottom: 1px solid #fff; color: #039; }
+
+td {    
+    padding: 8px;     
+    background: #83ced1be;     
+    border-bottom: 1px solid #fff;
+    color: rgba(6, 7, 6, 0.63);    
+    border-top: 1px solid transparent; }
+
+tr:hover td { 
+    background: #d0dafd; 
+    color: rgba(21, 22, 21, 0.424); 
+}
